@@ -55,8 +55,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        int healthy_chicken = 19;
-        int sick_chicken = 1;
+        int healthy_chicken = 13;
+        int sick_chicken = 7;
         int total_chicken = healthy_chicken + sick_chicken;
         float healthy_ratio = (float) healthy_chicken / total_chicken * 100;
 
@@ -122,7 +122,8 @@ public class MainActivity extends AppCompatActivity {
 
         Cartesian cartesian = AnyChart.column();
         String[] hour = {"2", "4", "6", "8", "10", "12", "14", "16", "18", "20", "22", "24"};
-        int[] raw_data = {0, 0, 600, 500, 340, 500, 260, 420, 500, 0, 0, 0};
+//        int[] raw_data = {0, 0, 600, 500, 340, 500, 260, 420, 500, 0, 0, 0};
+        int[] raw_data = {0, 0, 500, 400, 440, 600, 360, 320, 400, 0, 0, 0};
         List<DataEntry> data2 = new ArrayList<>();
         int sum = 0;
         for (int i = 0; i < hour.length; i++) {
